@@ -80,22 +80,4 @@ linked.add(9)
 linked.print()
 
 
-class Node_C:
-    def __int__(self, data):
-        self.data = data
-        self.ref = None
 
-
-class LinkedLis:
-    def __init__(self):
-        self.head = None
-
-    def add_node(self, data):
-        new_node = Node_C(data)
-        new_node.ref = self.head
-        self.head = new_node
-
-    def trav(self):
-        while self.head:
-            print(self.head.data)
-            self.head = self.head.ref
